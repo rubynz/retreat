@@ -9,6 +9,7 @@
       body {
         font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
         padding: 2em;
+        line-height: 1.4;
       }
       main {
         max-width: 40em;
@@ -17,11 +18,60 @@
       img {
         max-width: 100%;
       }
+      .whole {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .half {
+        flex-basis: 50%;
+        min-width: 15em;
+      }
+      dt {
+        font-weight: bold;
+      }
     </style>
     <main>
-      <h1>Ruby Retreat</h1>
-      <p>Coming soon - 27-30 March 2020</p>
-      <div><img src="logo.png" class=""></div>
+      <h1>Ruby Retreat!</h1>
+      <p>27-30 March 2020 - Mt Cheeseman, New Zealand</p>
+      <div class="whole">
+        <section class="half">
+          <img src="logo.png" class="">
+        </section>
+        <section class="half">
+          <dl>
+            <dt>What is a Ruby Retreat?</dt>
+            <dd>
+              Ruby Retreat is an unconference run by and for the Ruby programming language community.
+            </dd>
+            <dd>
+              Picture yourself in the mountains with your smartest friends.
+              The air is clear and so is your mind.
+              There's no limit to what you can achieve here.
+              <ul>
+                <li>Scheming? Certainly.</li>
+                <li>Coding? It's likely.</li>
+                <li>Enlightenment? Maybe.</li>
+                <li>Drinking? No. <strong>Ruby Retreat is alcohol free.</strong></li>
+              </ul>
+            </dd>
+            <dt>What do I do at a Ruby Retreat?</dt>
+            <dd>
+              This will be the very first Ruby Retreat, although it is the sequel to <a href="https://camp.ruby.nz">Rails Camp</a>.
+              <ul>
+                <li>Work on Ruby projects with your friends.</li>
+                <li>Share your work with others.</li>
+                <li>Talk through gnarly problems with thoughtful, friendly folks.</li>
+                <li>Connect with the Ruby community.</li>
+                <li>Follow your dreams.</li>
+              </ul>
+            </dd>
+            <dt>Should I come to Ruby Retreat?</dt>
+            <dd>
+              Yes. <a href="#">Buy a ticket here.</a>
+            </dd>
+          </dl>
+        </section>
+      </div>
     </main>
   </body>
 </html>
