@@ -1,0 +1,311 @@
+/* General */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+* {
+  font-family: "Titillium Web", sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+.left p,
+.left h1,
+.left h2,
+.left h3 {
+  text-align: left;
+  margin-left: 0;
+}
+
+/* Page */
+
+.page-container {
+  margin: 0 3%;
+}
+
+/* Header */
+
+.heading {
+  font-size: 64px;
+  font-weight: 300;
+  letter-spacing: 0.7rem;
+  margin-top: 8%;
+  width: 76%;
+  margin: 8% auto 0 auto;
+}
+
+.header-wrapper {
+  background-image: url("/img/cheeseman-banner.jpg");
+  background-size: cover;
+  color: white;
+  height: 566px;
+}
+
+.header-wrapper.no-img {
+  background-image: none;
+  background-color: #6fccd4;
+}
+
+.img-mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Buttons */
+
+.button {
+  display: inline-flex;
+  border: 1px solid white;
+  border-radius: 4px;
+  height: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.button:hover {
+  background: white;
+  color: black;
+  transition: background-color 300ms ease-in;
+}
+
+.button.inverted {
+  color: black;
+  border: 1px solid black;
+}
+
+.button.inverted:hover {
+  background: black;
+  color: white;
+  transition: background-color 300ms ease-in;
+}
+
+/* Sections */
+
+section {
+  padding-top: 100px;
+  text-align: center;
+}
+
+section h2 {
+  font-weight: 300;
+  text-align: center;
+  font-size: 24px;
+  color: #76c8c2;
+}
+
+section p {
+  font-size: 30px;
+  max-width: 1000px;
+  margin: 0 auto 20px auto;
+}
+
+section p a {
+  color: #76c8c2;
+  text-decoration: none;
+}
+
+.color-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+
+.header {
+  padding: 50px 0;
+  display: flex;
+  text-transform: uppercase;
+  width: 90%;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.header .logo-link {
+  color: red;
+}
+
+.sub-header {
+  display: flex;
+  width: 76%;
+  margin: auto;
+  padding-left: 10px;
+}
+
+.sub-header .block {
+  width: 33%;
+  margin-right: 30px;
+}
+
+.sub-header .block h2 {
+  opacity: 0.6;
+  font-size: 18px;
+}
+
+.sub-header .block p {
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+/* Navigation */
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  margin: 0 20px;
+  letter-spacing: 0.3rem;
+  text-decoration: none;
+  color: white;
+}
+
+/* Image Gallery */
+
+.img-gallery {
+  display: flex;
+}
+
+.img-gallery .sm {
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.img-gallery .lg-1-3 {
+  background-size: cover;
+  margin-left: 30px;
+  height: 530px;
+  width: 33%;
+}
+
+.img-gallery .img-stack {
+  width: 33%;
+}
+
+/* Speakers */
+
+.speakers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.speakers .speaker-col {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(33% - 20px);
+  margin-left: 20px;
+}
+
+.speakers .speaker-col h3 {
+  font-size: 20px;
+  text-align: left;
+  margin: 0;
+}
+
+.speakers .speaker-col p {
+  font-size: 16px;
+  text-align: left;
+}
+
+.speakers .speaker-col .speaker-img-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.speakers .speaker-col .speaker-img {
+  width: 100%;
+  width: 265px;
+  height: 300px;
+  background-size: cover;
+}
+
+.speaker-summary {
+  margin: 20px auto 0 auto;
+  width: 265px;
+}
+
+.speaker-summary p {
+  opacity: 0.6;
+  font-size: 16px;
+}
+
+/* friends */
+
+.friends {
+  display: flex;
+}
+
+.friends .friend {
+  border: 1px solid rgba(212, 125, 125, 0.3);
+  height: 300px;
+  width: 400px;
+  border-right: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.friends .button {
+  text-align: center;
+  margin: auto;
+}
+
+.friends .friend .friend-logo {
+  padding: 30px 0;
+}
+
+.friends .friend .friend-logo img {
+  height: 100px;
+}
+
+.friends .friend:hover {
+  border-color: black;
+  border-right: 1px solid black;
+}
+
+.friends .friend:last-child {
+  border-right: 1px solid rgba(212, 125, 125, 0.3);
+}
+
+.friends .friend:last-child:hover {
+  border-right: 1px solid black;
+}
+
+/* Footer */
+.footer {
+  background-color: black;
+  height: 150px;
+  margin-top: 100px;
+  padding: 20px 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer i,
+.footer p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 30px;
+}
+
+.footer i {
+  margin-top: 45px;
+}
+
+.footer i:hover {
+  color: white;
+  transition: color 300ms ease-in;
+}
