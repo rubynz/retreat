@@ -35,16 +35,15 @@ body {
   font-size: 64px;
   font-weight: 300;
   letter-spacing: 0.7rem;
-  margin-top: 8%;
   width: 76%;
-  margin: 8% auto 0 auto;
+  margin: 1% auto 0 auto;
 }
 
 .header-wrapper {
-  background-image: url("/img/cheeseman-banner.jpg");
+  background-image: url("../img/cheeseman-banner.jpg");
   background-size: cover;
   color: white;
-  height: 566px;
+  height: 682px;
 }
 
 .header-wrapper.no-img {
@@ -72,10 +71,20 @@ body {
   color: white;
 }
 
+.cta {
+  background: #76c8c2;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
 .button:hover {
   background: white;
   color: black;
   transition: background-color 300ms ease-in;
+}
+
+.cta:hover {
+  color: #76c8c2;
 }
 
 .button.inverted {
@@ -99,12 +108,13 @@ section {
 section h2 {
   font-weight: 300;
   text-align: center;
-  font-size: 24px;
+  font-size: 36px;
   color: #76c8c2;
+  text-transform: uppercase;
 }
 
 section p {
-  font-size: 30px;
+  font-size: 26px;
   max-width: 1000px;
   margin: 0 auto 20px auto;
 }
@@ -123,10 +133,10 @@ section p a {
 /* Header */
 
 .header {
-  padding: 50px 0;
+  padding: 4% 0;
   display: flex;
   text-transform: uppercase;
-  width: 90%;
+  width: 100%;
   margin: auto;
   justify-content: space-evenly;
 }
@@ -161,10 +171,12 @@ section p a {
 
 .nav {
   display: flex;
+  align-items: initial;
+  width: 76%;
 }
 
 .nav a {
-  margin: 0 20px;
+  margin: 0 4% 0 0;
   letter-spacing: 0.3rem;
   text-decoration: none;
   color: white;
@@ -249,7 +261,7 @@ section p a {
 }
 
 .friends .friend {
-  border: 1px solid rgba(212, 125, 125, 0.3);
+  border: 0px solid rgba(212, 125, 125, 0.3);
   height: 300px;
   width: 400px;
   border-right: none;
@@ -270,19 +282,6 @@ section p a {
 
 .friends .friend .friend-logo img {
   height: 100px;
-}
-
-.friends .friend:hover {
-  border-color: black;
-  border-right: 1px solid black;
-}
-
-.friends .friend:last-child {
-  border-right: 1px solid rgba(212, 125, 125, 0.3);
-}
-
-.friends .friend:last-child:hover {
-  border-right: 1px solid black;
 }
 
 /* Footer */
