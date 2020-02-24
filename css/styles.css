@@ -188,6 +188,10 @@ section p a {
   display: flex;
 }
 
+.img-gallery img {
+  display:block;
+}
+
 .img-gallery .sm {
   background-size: cover;
   height: 250px;
