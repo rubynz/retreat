@@ -49,6 +49,11 @@ body {
 .header-wrapper.no-img {
   background-image: none;
   background-color: #6fccd4;
+  height: 341px;
+}
+
+.header-wrapper.no-img .header {
+  padding: 4% 0 1% 0;
 }
 
 .img-mask {
