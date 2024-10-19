@@ -40,7 +40,7 @@ body {
 }
 
 .header-wrapper {
-  background-image: url("../img/cheeseman-banner.jpg");
+  background-image: url("../img/shakespear-banner.jpg");
   background-size: cover;
   color: white;
   height: 682px;
@@ -59,7 +59,7 @@ body {
 .img-mask {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Buttons */
@@ -195,6 +195,7 @@ section p a {
 
 .img-gallery img {
   display:block;
+  object-fit: cover;
 }
 
 .img-gallery .sm {
