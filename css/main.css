@@ -46,6 +46,7 @@ a {
 .header-wrapper {
   background-image: url("../img/shakespear-banner.jpg");
   background-size: cover;
+  background-position: center;
   color: white;
   height: 682px;
 }
