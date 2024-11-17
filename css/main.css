@@ -7,6 +7,10 @@ body {
   margin: 0;
 }
 
+a {
+  color: #76c8c2;
+}
+
 * {
   font-family: "Titillium Web", sans-serif;
 }
@@ -106,11 +110,11 @@ body {
 /* Sections */
 
 section {
-  padding-top: 100px;
-  text-align: center;
+  padding-top: 20px;
 }
 
 section h2 {
+  text-align: center;
   font-weight: 300;
   text-align: center;
   font-size: 36px;
@@ -118,15 +122,16 @@ section h2 {
   text-transform: uppercase;
 }
 
-section p {
-  font-size: 26px;
+section p, section ul {
+  font-size: 20px;
   max-width: 1000px;
   margin: 0 auto 20px auto;
 }
 
-section p a {
-  color: #76c8c2;
-  text-decoration: none;
+section img {
+  margin: 20px;
+  width: 300px;
+  float: right;
 }
 
 .color-overlay {
@@ -172,6 +177,11 @@ section p a {
   text-transform: uppercase;
 }
 
+.sub-header .button.buy-ticket {
+  font-size: 32px;
+  height: 50px;
+}
+
 /* Navigation */
 
 .nav {
@@ -188,6 +198,10 @@ section p a {
 }
 
 /* Image Gallery */
+
+.venue-address {
+  color: #76c8c2;
+}
 
 .img-gallery {
   display: flex;
@@ -272,13 +286,12 @@ section p a {
 
 .friends .friend {
   border: 0px solid rgba(212, 125, 125, 0.3);
-  height: 300px;
-  width: 400px;
+  width: 76%;
   border-right: none;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction: row;
   margin: auto;
+  gap: 20px;
 }
 
 .friends .button {
@@ -286,28 +299,24 @@ section p a {
   margin: auto;
 }
 
-.friends .friend .friend-logo {
-  padding: 30px 0;
+.friends .friend img.friend-logo {
+  height: 100px;
 }
 
-.friends .friend .friend-logo img {
-  height: 100px;
+.friends .friend .friend-description {
+  flex-grow: 1;
+  text-align: left;
 }
 
 /* Footer */
 .footer {
-  background-color: black;
-  height: 150px;
   margin-top: 100px;
   padding: 20px 15%;
-  display: flex;
-  justify-content: space-between;
 }
 
 .footer i,
 .footer p {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .footer i {
