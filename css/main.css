@@ -283,6 +283,8 @@ section img {
 
 .friends {
   display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .friends .friend {
@@ -300,8 +302,9 @@ section img {
   margin: auto;
 }
 
-.friends .friend img.friend-logo {
-  height: 100px;
+.friends .friend .friend-logo img {
+  height: 120px;
+  object-fit: contain;
 }
 
 .friends .friend .friend-description {
